@@ -1,0 +1,25 @@
+# 環境・秘密（リポジトリに含めない）
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# 誤ってクローン内に置いた認証・DB
+auth.json
+**/auth.json
+data/
+*.db
+secrets/
+*.pem
+*.key
+
+# Playwright 成果物
+artifacts/
+trace*.zip
