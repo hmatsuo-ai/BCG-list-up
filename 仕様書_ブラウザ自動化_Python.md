@@ -49,6 +49,7 @@
 | 永続化 | **SQLite 3** | ジョブ結果・メタデータの単一ファイル DB（§3.2） |
 | DB アクセス（任意） | **`sqlite3`** 標準 / **SQLAlchemy 2.x** + **Alembic** | CRUD・スキーママイグレーション |
 | 設定 | **`config/`（YAML 等）** + **`pydantic-settings`** 等 | Playwright 起動オプション・タイムアウト・パス類の集約（§3.1） |
+| 秘密の保存先（実装） | 環境変数 **`BCG_LIST_UP_SECRETS_DIR`**（未設定時は `~/.bcg-list-up-secrets`） | GitHub リポジトリ [BCG-list-up](https://github.com/hmatsuo-ai/BCG-list-up) と名義を揃えた変数名。`secrets_paths.py` |
 | ログ | 標準 **`logging`**（または社内ロガー） | 構造化ログ・ジョブ証跡 |
 | 非同期（任意） | **`asyncio`** + `async_playwright`、**`aiosqlite`**（採用時） | 高スループット時のみ。既定は同期 API（§3.1） |
 | 運用環境 | **常設 PC 1 台**（Windows / Linux） | ジョブ・SQLite・成果物の配置先（§4.1） |
@@ -447,3 +448,4 @@ CI やオフライン環境では **`PLAYWRIGHT_BROWSERS_PATH`** でブラウザ
 | 1.0 | 2026-04-21 | §3.6 Stealth・要件 ST・設定・構成図・ディレクトリ・非機能・requirements 注記を追加 |
 | 1.1 | 2026-04-21 | §3.0 技術スタック一覧（まとめ）を追加 |
 | 1.2 | 2026-04-21 | §4.3 認証時のアカウント運用前提、要件 AC、§2.2 連携を追加 |
+| 1.3 | 2026-04-21 | 秘密ディレクトリ環境変数を BCG_LIST_UP_SECRETS_DIR に統一（リポジトリ名と名義の一致） |
