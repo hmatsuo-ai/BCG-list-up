@@ -2,7 +2,7 @@
 手動ログイン後に storage_state を保存する。
 
 既定の保存先（--out 省略時）:
-  VEXUM_SECRETS_DIR/auth.json または ~/.vexum_secrets/auth.json
+  BCG_LIST_UP_SECRETS_DIR/auth.json または ~/.bcg-list-up-secrets/auth.json
   親ディレクトリは存在しなければ作成する。
 
 使い方:

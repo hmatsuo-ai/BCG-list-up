@@ -2,9 +2,9 @@
 保存済み storage_state からブラウザを起動し、ハッシュタグ探索ページを開く。
 
 既定の auth パス（--auth 省略時）:
-  環境変数 VEXUM_SECRETS_DIR があれば <そのディレクトリ>/auth.json
-  なければ ユーザーホーム/.vexum_secrets/auth.json
-  （いずれも Git 管理外を推奨。プロジェクト直下の .env で VEXUM_SECRETS_DIR を指定可）
+  環境変数 BCG_LIST_UP_SECRETS_DIR があれば <そのディレクトリ>/auth.json
+  なければ ユーザーホーム/.bcg-list-up-secrets/auth.json
+  （いずれも Git 管理外を推奨。プロジェクト直下の .env で BCG_LIST_UP_SECRETS_DIR を指定可）
 
 使い方:
   python open_hashtag_from_storage.py --tag photography
